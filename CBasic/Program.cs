@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CBasic
@@ -37,6 +38,18 @@ namespace CBasic
             Console.WriteLine(true);
             Console.WriteLine(true);
 
+
+            int a = 2000000000;
+            int b = 1000000000;
+            Console.WriteLine((long)a + b);
+            Console.WriteLine(a + (long)b);
+            Console.WriteLine(a + b);
+
+            Console.WriteLine(long.MaxValue);
+            Console.WriteLine(long.MinValue);
+
+
+            Console.WriteLine(sizeof(int));
         }
     }
 }
